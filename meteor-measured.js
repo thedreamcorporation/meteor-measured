@@ -1,11 +1,10 @@
-import { Meteor } from 'meteor/meteor';
 import createMeteorMetrics, {
   createObserverMetrics,
   createSessionMetrics,
   createSocketMetrics
 } from './metrics/meteor';
 
-function measured(registry, customDimensions, reportingIntervalInSeconds) {
+function measured(Meteor, registry, customDimensions, reportingIntervalInSeconds) {
   Meteor.startup(() => {
     createMeteorMetrics(Meteor, registry, customDimensions, reportingIntervalInSeconds);
   });

@@ -1,6 +1,6 @@
 Package.describe({
   name: '@tdc/meteor-measured',
-  version: '1.0.0',
+  version: '1.0.1',
   summary: 'Meteor metrics library',
   git: 'https://github.com/thedreamcorporation/meteor-measured',
   documentation: 'README.md'
